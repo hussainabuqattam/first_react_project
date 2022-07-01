@@ -1,0 +1,68 @@
+npx create-react-app my-app
+cd my-app
+npm start
+------------------------------
+تحديد الوقت 
+toLocaleString()
+toLocaleString(locales)
+toLocaleString(locales, options)
+---------------------------------------
+import React from 'react';React.createElement تستدعى في جميع الصفحات عند استخدام ال 
+
+React.createElement('htmlelement',{متغير اذا كان موجود ما كان بنخليه فاضي},'text in element if you have text');
+مثال  
+
+React.createElement('div',                       //parent elemnt
+ {},
+React.createElement('h1', {}, 'My favorite ice cream flavors')    //childelement
+
+);
+-----------------------------------------------
+1)Which kind of code do you write when using React.js?
+
+declarative javascript code
+
+2)What is "JSX"?
+
+its a special,non-stanard syntax which is enabled in react projects
+
+3)Why is React all about "Components"?
+
+every ui in the end up is made up of multiple building blocks (=componets),hence it makes 
+sense to think about user interfaces as "combinations of componets"
+
+4)What does "declarative" mean?
+you define the desired outcome (e.g.a target ui) and let library (react )
+fiqure out the steps.
+
+5)What is a "React Component"?
+its javascript function which typically returns html(jsx)code that shouid be displayed
+
+6)How many custom React components must a React app have?
+
+thats totally up to you
+
+7)Which statement is correct?
+
+with react , you build a component tree with one root component thats mounted into a dom node
+
+8)What does "component tree" mean?
+
+it means that you have a root node which then has more components nested beneath it
+
+9)How do you pass data between components?
+
+via "custom html attributes"(better known as "props")
+
+10)How can you output dynamic data in React components (i.e. in the returned JSX code)?
+you can use single curly braces (opening & closing) with any js expression between them.
+---------------------------------------------------------------------------------------------
+get value from input = 
+
+    const titleHandler = (event) =>{
+       console.log(event.target.value);
+    }
+
+                <input type="text" onChange={titleHandler}></input>
+---------------------------------------------------------------------------------
+
